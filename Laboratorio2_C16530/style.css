@@ -15,6 +15,36 @@ header {
     padding: 20px 15px;
 }
 
+/* Navegacion */
+nav {
+    width: 100%;
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #444;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        text-transform: uppercase;
+        padding: 14px 20px;
+        font-weight: bold;
+    }
+
+        nav a:hover, nav a:active {
+            background-color: #000000;
+        }
 
 a {
     color: #1E6FFF;
