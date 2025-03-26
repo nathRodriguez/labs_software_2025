@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    border: 0;
     width: 100%;
     background: #f9f9f9;
     color: #444;
@@ -42,10 +41,11 @@ header {
     background-color: #9caf88;
     color: white;
     text-align: center;
-    padding: 20px 15px;
+    padding: 20px 0 0 0;
+    margin: 0;
 }
 
-/* Navegacion */
+/* Navegación */
 nav {
     width: 100%;
 }
@@ -60,7 +60,7 @@ nav {
     }
 
     nav li {
-        display: inline-block;
+        float: left;
     }
 
     nav a {
@@ -68,8 +68,8 @@ nav {
         color: white;
         display: block;
         text-transform: uppercase;
-        padding: 14px 20px;
         font-weight: bold;
+        padding: 14px 20px;
     }
 
         nav a:hover, nav a:active {
