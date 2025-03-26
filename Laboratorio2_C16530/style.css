@@ -81,3 +81,11 @@ section {
     margin: 0 auto;
     border-bottom: 1px solid #ccc;
 }
+
+footer {
+    clear: both;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+}
