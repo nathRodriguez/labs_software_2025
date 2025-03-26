@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    background: #f9f9f9;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: #1E6FFF;
+}
+
+    a:hover {
+        color: #fff;
+        background: #1E6FFF;
+        text-decoration: none;
+    }
+
+h1, h3 {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+p {
+    padding: 0;
+    margin: 10px 0;
+}
+
+img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 12px;
+}
