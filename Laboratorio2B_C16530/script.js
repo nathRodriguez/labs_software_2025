@@ -1,7 +1,7 @@
 function agregar() {
-    var lista = document.getElementById("lista");
-    var elementos = lista.getElementsByTagName("li").length;
-    var elemento = document.createElement("li");
+    const lista = document.getElementById("lista");
+    const elementos = lista.getElementsByTagName("li").length;
+    const elemento = document.createElement("li");
     elemento.innerHTML = "Elemento" + (elementos + 1);
     lista.appendChild(elemento);
 }
@@ -10,9 +10,9 @@ function cambiarFondo() {
 
 }
 function borrar() {
-    var lista = document.getElementById("lista");
-    var elementos = lista.getElementsByTagName("li").length;
+    const lista = document.getElementById("lista");
+    const elementos = lista.getElementsByTagName("li");
     if (elementos.length > 0) {
-        lista.removeChild(lista.lastChild);
+        lista.removeChild(elementos[elementos.length - 1]);
     }
 }
