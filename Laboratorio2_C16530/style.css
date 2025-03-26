@@ -37,6 +37,7 @@ img {
     border-radius: 12px;
 }
 
+/* Header */
 header {
     background-color: #9caf88;
     color: white;
@@ -75,6 +76,7 @@ nav {
             background-color: #000000;
         }
 
+/* Contenido */
 section {
     padding: 40px 20px;
     max-width: 800px;
@@ -82,10 +84,27 @@ section {
     border-bottom: 1px solid #ccc;
 }
 
+/* Footer */
 footer {
     clear: both;
     padding: 20px;
     text-align: center;
     font-size: 0.9em;
     color: #555;
+}
+
+/* Responsive */
+@media screen and (max-width: 960px) {
+    section {
+        padding: 20px;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    img {
+        max-width: 100%;
+    }
 }
