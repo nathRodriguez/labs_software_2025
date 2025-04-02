@@ -30,6 +30,18 @@
 <script>
     export default {
         name: "ListaPaises",
+        data() {
+            return {
+                paises: [
+                    {nombre: "Costa Rica", continente: "America", idioma: "Español" },
+                    {nombre: "Japón", continente: "Asia", idioma: "Japonés" },
+                    {nombre: "Corea del Sur", continente: "Asia", idioma: "Coreano" },
+                    {nombre: "Italia", continente: "Europa", idioma: "Italiano" },
+                    {nombre: "Alemania", continente: "Europa", idioma: "Alemán" },
+                    
+                ],
+            };
+        },
     };
 </script>
 
