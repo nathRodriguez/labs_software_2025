@@ -19,7 +19,7 @@
                     <td>{{ pais.idioma }}</td>
                     <td>
                         <button class="btn btn-secondary btn-sm">Editar</button>
-                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                        <button class="btn btn-danger btn-sm" @click="eliminarPais(index)">Eliminar</button>
                     </td>
                 </tr>
             </tbody>
@@ -41,6 +41,12 @@
                     
                 ],
             };
+        },
+        methods: {
+            // Implementado siguiendo el ejemplo de @click según: https://vuejs.org/guide/essentials/event-handling
+            eliminarPais(index) {
+                this.paises.splice(index, 1);
+            }
         },
     };
 </script>
