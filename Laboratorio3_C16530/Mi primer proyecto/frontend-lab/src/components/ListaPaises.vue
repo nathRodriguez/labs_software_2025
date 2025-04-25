@@ -49,7 +49,7 @@ import axios from "axios";
                 this.paises.splice(index, 1);
             },
             obtenerTareas() {
-                axios.get("http://localhost:7019/api/Paises").then((response) => {
+                axios.get("http://localhost:5000/api/Paises").then((response) => {
                     this.paises = response.data;
                 });
             }
