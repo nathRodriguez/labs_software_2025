@@ -28,6 +28,7 @@
 </template>
 
 <script>
+import axios from "axios";
     export default {
         name: "ListaPaises",
         data() {
@@ -46,7 +47,15 @@
             // Implementado siguiendo el ejemplo de @click según: https://vuejs.org/guide/essentials/event-handling
             eliminarPais(index) {
                 this.paises.splice(index, 1);
+            },
+            obtenerTareas() {
+                axios.get("http://localhost:7019/api/Paises").then((response) => {
+                    this.paises = response.data;
+                });
             }
+        },
+        created: function () {
+            this.obtenerTareas();
         },
     };
 </script>
