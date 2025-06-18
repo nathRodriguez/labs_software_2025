@@ -46,13 +46,14 @@ export default {
     guardarPais() {
       console.log("Datos a guardar:", this.datosFormulario);
       axios
-      .post("https://localhost:7128/api/Paises", {
+      .post("http://localhost:5275/api/Paises", {
         nombre: this.datosFormulario.nombre,
         continente: this.datosFormulario.continente,
         idioma: this.datosFormulario.idioma,
       })
       .then(function (response) {
         console.log(response);
+        alert("País creado exitosamente.");
         window.location.href = "/";
       })
       .catch(function (error) {
